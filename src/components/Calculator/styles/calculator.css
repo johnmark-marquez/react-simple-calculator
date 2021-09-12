@@ -1,0 +1,70 @@
+.calculator {
+  width: 20rem;
+  height: 30rem;
+  background-color: lightcyan;
+  display: grid;
+  padding: 1%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* border: ridge; */
+}
+
+.keys-numbers {
+  grid-area: keys-numbers;
+  direction: rtl;
+}
+
+.keys-numbers .key-zero {
+  width: 9.1rem;
+  text-align: left;
+  padding-left: 15%;
+}
+
+.keys-numbers button {
+  background-color: darkslategrey;
+}
+
+.keys-operators {
+  grid-area: keys-operators;
+}
+
+.keys-operators button {
+  background-color: orange;
+}
+
+.keys-function {
+  grid-area: keys-function;
+}
+
+.keys-function button {
+  background-color: lightgrey;
+}
+
+.calculator-keypad {
+  padding-top: 0.3rem;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: repeat(5, 5rem);
+  grid-template-areas: "keys-function keys-function keys-function keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators";
+}
+
+.calculator-input {
+  border-color: black;
+  text-align: right;
+  padding-right: 10%;
+  font-weight: bold;
+  font-size: xx-large;
+  background-color: black;
+}
+
+.result {
+  padding-top: 15px;
+  min-height: 3rem;
+  background-color: black;
+  color: white;
+}
